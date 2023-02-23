@@ -266,7 +266,7 @@
         const fg = (kind, i) => i <= colors[kind].bw ? "black" : "white";
         const bg = (kind, i) => colors[kind].range[i]
 
-        const rnd = () => Math.round(Math.random() * 90 + 10 % 100)
+        const rnd = () => Math.round((Math.random() * 90 + 10) % 100)
 
         createApp({
             data() {
